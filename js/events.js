@@ -29,5 +29,5 @@ function setEvent(event) {
     var id = event.getAttribute("data-id");
     console.log('clicked');
     sessionStorage.setItem('moscEventId', id);
-    window.location.href='http://localhost:5500/eventDetails.html';
+    window.location.href='https://mosc-mite.github.io/mosc-website/eventDetails.html';
 }

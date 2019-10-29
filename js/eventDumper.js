@@ -1,5 +1,5 @@
 if(!sessionStorage.getItem('moscEventId')){
-    window.location.href='http://localhost:5500/events.html';
+    window.location.href='https://mosc-mite.github.io/mosc-website/events.html';
 }
 
 var id = sessionStorage.getItem('moscEventId');
