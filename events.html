@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#0075f2">
+    <title>MOSC | Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+</head>
+
+<body  style="background-color: #f3f3f3">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                MOSC
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto" style="font-size: 1.15em !important">
+                    <a class="nav-item nav-link mr-5" href="./index.html">Home</a>
+                    <a class="nav-item nav-link mr-5 active" href="./events.html">Events<span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link mr-5" href="./team.html">Team </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<div class="container"style="padding-top:5rem;">
+    <div class="row card-holder"  id="area" style="min-height:45vh">
+        <!-- <img src="./img/loader.png" alt="Loading..." style="margin:auto" width="100px" height="100px"> -->
+        <h3>Loading...</h3>
+
+    </div>
+</div>
+
+<div class="mt-5 pt-5 pb-5 footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+                <h2>MITE Open Source Community</h2>
+                <p class="pr-5 text-white-50">Mangalore Institute of Technology and Engineering,<br>Badaga Mijar,
+                    Moodabidri, <br>Karnataka - 574225</p>
+                <!-- <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p> -->
+            </div>
+            <div class="col-lg-3 col-xs-12 links mb-3">
+                <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="m-0 p-0">
+                    <li>- <a href="https://github.com/mosc-mite" target="_blank">Github</a></li>
+                    <li>- <a href="https://instagram.com/mosc.mite/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+                <h4 class="mt-lg-0 mt-sm-4">Contact</h4>
+                <p class="mb-0"><i class="fa fa-phone mr-3"></i>+91 909099090</p>
+                <p><i class="fa fa-envelope-o mr-3"></i>mosc@mite.ac.in</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col copyright">
+                <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ad3bc45f55.js" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAwhjRGTczuu-Ai3lhkxut4nSHFHof9M7g",
+        authDomain: "mosc-15266.firebaseapp.com",
+        databaseURL: "https://mosc-15266.firebaseio.com",
+        projectId: "mosc-15266",
+        storageBucket: "mosc-15266.appspot.com",
+        messagingSenderId: "854444176828",
+        appId: "1:854444176828:web:fb16f3b648c05e4c3a67b9",
+        measurementId: "G-5JKWZXC8C1"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="js/events.js"></script>
+
+
+</html>
