@@ -54,7 +54,7 @@ nav {
 
 .header {
     min-height: 50vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/9814.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     color: white;
     background-size: cover;
     background-position: center;
@@ -209,6 +209,10 @@ nav {
     border-radius:3px;
 }
 
+.m-event-details{
+    padding-left:3%; padding-right:3%; padding-top:3%
+}
+
 .event-container{
     padding-top:5rem;
     padding-left:10%;
@@ -229,6 +233,10 @@ nav {
         border-bottom: 0;
     }
 
+    .m-event-details{
+        padding-left:5%; padding-right:5%; padding-top:3%
+    }
+    
 
     .header p {
         font-size: 2rem;
@@ -265,7 +273,7 @@ nav {
     }
 
     .event-d-img{
-        height:300px;
+        height:250px;
     }
 
 }

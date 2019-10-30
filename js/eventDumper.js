@@ -1,5 +1,5 @@
 if(!sessionStorage.getItem('moscEventId')){
-    window.location.href='https://mosc-mite.github.io/mosc-website/events.html';
+    window.location.href='/events.html';
 }
 
 var id = sessionStorage.getItem('moscEventId');
@@ -12,11 +12,11 @@ db.collection('events').doc(id).get().then((doc) => {
    var event = doc.data();
    data += `
    <div class="row">
-       <div class="col-md-12 col-sm-12" style="marggin:0;">
+       <div class="col-md-12 col-sm-12" style="margin:0;">
            <img src="${event.image}" class="event-d-img">    
        </div>
    </div>
-   <div class="row" style="padding-left:3%; padding-right:3%; padding-top:3%">
+   <div class="row m-event-details">
        <div class="col-md-12 col-sm-12">
            <h4 class="event-d-heading">About the Event</h4>
            <p style="font-size:1.2rem">${event.description}</p>   
